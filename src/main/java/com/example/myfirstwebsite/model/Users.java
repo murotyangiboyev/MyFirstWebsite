@@ -16,6 +16,6 @@ public class Users {
     private String name;
     private String address;
     private String password;
-
+    private String city;
 
 }
