@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>F1 | RoboContest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff4b2b;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h1 {
+            color: #ff4b2b;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            margin-bottom: 20px;
+        }
+        .card {
+            background: rgba(0,0,0,0.5);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #ff4b2b;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        a.button:hover {
+            background: #ff416c;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo"><i class="fas fa-robot"></i> RoboContest</div>
+    <h1>Formula 1</h1>
+    <div class="card">
+        <h2>About F1</h2>
+        <p>Formula 1 is the highest class of international single-seater auto racing sanctioned by the FIA. It's a global sport with fast cars and exciting tracks.</p>
+    </div>
+    <div class="card">
+        <h2>Top Teams</h2>
+        <ul>
+            <li>Mercedes</li>
+            <li>Red Bull Racing</li>
+            <li>Ferrari</li>
+            <li>McLaren</li>
+        </ul>
+    </div>
+    <a href="/" class="button"><i class="fas fa-home"></i> Back to Home</a>
+</div>
+</body>
+</html>

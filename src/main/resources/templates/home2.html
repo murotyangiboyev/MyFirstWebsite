@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | RoboContest</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .home-container {
+            background: rgba(0,0,0,0.5);
+            padding: 40px 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .home-container h1 {
+            font-size: 2.8rem;
+            color: #ff4b2b;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+        }
+
+        .home-container p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #ff4b2b;
+            letter-spacing: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background-color: #ff4b2b;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .button:hover {
+            background-color: #ff416c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .buttons-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="home-container">
+    <div class="logo"><i class="fas fa-robot"></i> RoboContest</div>
+    <h1>Welcome, Murat!</h1>
+    <p>This is the website of <strong>Murat Yangibayev</strong>.</p>
+    <p>You can find information about <strong>IELTS</strong>, <strong>F1</strong>, and <strong>Football</strong> here.</p>
+
+    <div class="buttons-container">
+        <a href="/IELTS" class="button"><i class="fas fa-book-open"></i> IELTS</a>
+        <a href="/F1" class="button"><i class="fas fa-flag-checkered"></i> F1</a>
+        <a href="/Football" class="button"><i class="fas fa-futbol"></i> Football</a>
+    </div>
+
+
+    <a href="logout" class="button"><i class="fas fa-sign-out-alt"></i> Logout</a>
+</div>
+</body>
+</html>

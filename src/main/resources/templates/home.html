@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Robocontest Vibe</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        a.button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #ff4b2b;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        a.button:hover {
+            background-color: #ff416c;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+            color: #ff4b2b;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo"><i class="fas fa-robot"></i> RoboContest</div>
+    <h1>Welcome to RoboContest</h1>
+    <p>Participate in challenges, learn robotics, and compete with others!</p>
+    <p>
+        <a href="/login" class="button"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="/registration" class="button"><i class="fas fa-user-plus"></i> Register</a>
+    </p>
+</div>
+</body>
+</html>

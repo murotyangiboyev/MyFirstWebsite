@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IELTS | RoboContest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff4b2b;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h1 {
+            color: #ff4b2b;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+            margin-bottom: 20px;
+        }
+        .card {
+            background: rgba(0,0,0,0.5);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+        }
+        a.button {
+            display: inline-block;
+            margin: 10px 10px 0 0;
+            padding: 12px 25px;
+            background: #ff4b2b;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        a.button:hover {
+            background: #ff416c;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo"><i class="fas fa-robot"></i> RoboContest</div>
+    <h1>IELTS Information</h1>
+
+    <div class="card">
+        <h2>About IELTS</h2>
+        <p>The IELTS test measures your English proficiency in reading, writing, listening, and speaking. It is widely accepted by universities, employers, and governments around the world.</p>
+    </div>
+
+    <div class="card">
+        <h2>Test Format</h2>
+        <p>IELTS has four sections: Listening (30 min), Reading (60 min), Writing (60 min), and Speaking (11-14 min).</p>
+    </div>
+
+    <div class="card">
+        <h2>Scoring</h2>
+        <p>Each section is scored from 0 to 9, and the overall band score is the average of the four sections.</p>
+    </div>
+
+    <a href="/" class="button"><i class="fas fa-arrow-left"></i> Back to Home</a>
+</div>
+</body>
+</html>
