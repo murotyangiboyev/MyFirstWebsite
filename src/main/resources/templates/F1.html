@@ -17,7 +17,7 @@
             padding: 50px 20px;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             width: 100%;
         }
         .logo {
@@ -46,9 +46,9 @@
             transform: translateY(-5px);
             box-shadow: 0 12px 25px rgba(0,0,0,0.5);
         }
-        a.button {
+        .collapsible {
             display: inline-block;
-            margin-top: 20px;
+            margin: 10px 10px 0 0;
             padding: 12px 25px;
             background: #ff4b2b;
             color: white;
@@ -56,9 +56,33 @@
             text-decoration: none;
             font-weight: bold;
             transition: 0.3s;
+            cursor: pointer;
         }
-        a.button:hover {
+        .collapsible:hover {
             background: #ff416c;
+        }
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            color: #fff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        thead tr {
+            background: #ff4b2b;
+            color: #fff;
+        }
+        tbody tr:nth-child(odd) {
+            background: rgba(255,255,255,0.1);
         }
     </style>
 </head>
@@ -66,10 +90,14 @@
 <div class="container">
     <div class="logo"><i class="fas fa-robot"></i> RoboContest</div>
     <h1>Formula 1</h1>
+
+    <!-- About F1 Card -->
     <div class="card">
         <h2>About F1</h2>
         <p>Formula 1 is the highest class of international single-seater auto racing sanctioned by the FIA. It's a global sport with fast cars and exciting tracks.</p>
     </div>
+
+    <!-- Top Teams Card -->
     <div class="card">
         <h2>Top Teams</h2>
         <ul>
@@ -79,7 +107,125 @@
             <li>McLaren</li>
         </ul>
     </div>
-    <a href="/" class="button"><i class="fas fa-home"></i> Back to Home</a>
+
+    <!-- Collapsible Standings for Multiple Years -->
+    <div class="card">
+        <h2>Driver Standings by Year</h2>
+
+        <!-- 2025 -->
+        <button class="collapsible"><i class="fas fa-trophy"></i> 2025 Standings</button>
+        <div class="content">
+            <table>
+                <thead>
+                <tr><th>Pos</th><th>Driver</th><th>Team / Car</th><th>Points</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>Lando Norris</td><td>McLaren‑Mercedes</td><td>423</td></tr>
+                <tr><td>2</td><td>Max Verstappen</td><td>Red Bull Racing‑Honda RBPT</td><td>421</td></tr>
+                <tr><td>3</td><td>Oscar Piastri</td><td>McLaren‑Mercedes</td><td>410</td></tr>
+                <tr><td>4</td><td>George Russell</td><td>Mercedes AMG Petronas</td><td>319</td></tr>
+                <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>242</td></tr>
+                <tr><td>6</td><td>Lewis Hamilton</td><td>Ferrari</td><td>156</td></tr>
+                <tr><td>7</td><td>Kimi Antonelli</td><td>Mercedes AMG Petronas</td><td>150</td></tr>
+                <tr><td>8</td><td>Alexander Albon</td><td>Williams (Williams‑Mercedes)</td><td>73</td></tr>
+                <tr><td>9</td><td>Carlos Sainz</td><td>Williams (Williams‑Mercedes)</td><td>64</td></tr>
+                <tr><td>10</td><td>Fernando Alonso</td><td>Aston Martin Aramco F1 Team</td><td>56</td></tr>
+                <tr><td>11</td><td>Nico Hülkenberg</td><td>Kick Sauber</td><td>51</td></tr>
+                <tr><td>12</td><td>Isack Hadjar</td><td>Racing Bulls Honda RBPT</td><td>51</td></tr>
+                <tr><td>13</td><td>Oliver Bearman</td><td>Haas F1 Team</td><td>41</td></tr>
+                <tr><td>14</td><td>Liam Lawson</td><td>Racing Bulls Honda RBPT</td><td>38</td></tr>
+                <tr><td>15</td><td>Esteban Ocon</td><td>Haas F1 Team</td><td>38</td></tr>
+                <tr><td>16</td><td>Lance Stroll</td><td>Aston Martin Aramco F1 Team</td><td>33</td></tr>
+                <tr><td>17</td><td>Yuki Tsunoda</td><td>Red Bull Racing‑Honda RBPT</td><td>33</td></tr>
+                <tr><td>18</td><td>Pierre Gasly</td><td>Alpine F1 Team</td><td>22</td></tr>
+                <tr><td>19</td><td>Gabriel Bortoleto</td><td>Kick Sauber</td><td>19</td></tr>
+                <tr><td>20</td><td>Franco Colapinto</td><td>Alpine F1 Team</td><td>13</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 2024 -->
+        <button class="collapsible"><i class="fas fa-trophy"></i> 2024 Standings</button>
+        <div class="content">
+            <table>
+                <thead>
+                <tr><th>Pos</th><th>Driver</th><th>Team / Car</th><th>Points</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>454</td></tr>
+                <tr><td>2</td><td>Lewis Hamilton</td><td>Mercedes</td><td>387</td></tr>
+                <tr><td>3</td><td>Charles Leclerc</td><td>Ferrari</td><td>362</td></tr>
+                <tr><td>4</td><td>George Russell</td><td>Mercedes</td><td>315</td></tr>
+                <tr><td>5</td><td>Lando Norris</td><td>McLaren</td><td>301</td></tr>
+                <!-- Add remaining drivers up to 20 -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 2023 -->
+        <button class="collapsible"><i class="fas fa-trophy"></i> 2023 Standings</button>
+        <div class="content">
+            <table>
+                <thead>
+                <tr><th>Pos</th><th>Driver</th><th>Team / Car</th><th>Points</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>503</td></tr>
+                <tr><td>2</td><td>Lewis Hamilton</td><td>Mercedes</td><td>357</td></tr>
+                <tr><td>3</td><td>Charles Leclerc</td><td>Ferrari</td><td>322</td></tr>
+                <!-- Add remaining drivers up to 20 -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 2022 -->
+        <button class="collapsible"><i class="fas fa-trophy"></i> 2022 Standings</button>
+        <div class="content">
+            <table>
+                <thead>
+                <tr><th>Pos</th><th>Driver</th><th>Team / Car</th><th>Points</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>454</td></tr>
+                <tr><td>2</td><td>Charles Leclerc</td><td>Ferrari</td><td>308</td></tr>
+                <tr><td>3</td><td>Lewis Hamilton</td><td>Mercedes</td><td>283</td></tr>
+                <!-- Add remaining drivers up to 20 -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 2021 -->
+        <button class="collapsible"><i class="fas fa-trophy"></i> 2021 Standings</button>
+        <div class="content">
+            <table>
+                <thead>
+                <tr><th>Pos</th><th>Driver</th><th>Team / Car</th><th>Points</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>395</td></tr>
+                <tr><td>2</td><td>Lewis Hamilton</td><td>Mercedes</td><td>387</td></tr>
+                <tr><td>3</td><td>Valtteri Bottas</td><td>Mercedes</td><td>226</td></tr>
+                <!-- Add remaining drivers up to 20 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
 </div>
+
+<script>
+    const collapsibles = document.querySelectorAll('.collapsible');
+    collapsibles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    });
+</script>
 </body>
 </html>
