@@ -27,7 +27,7 @@ public class AuthController {
         if (userService.registration(user)) return "redirect:/";
         else return "redirect:/registration";
     }
-    @GetMapping("/auth/UserProfile/{id}")
+    @GetMapping("/auth/userprofile/{id}")
     public Users getUserProfile(@PathVariable Long id){
         return userService.getUser(id);
     }
