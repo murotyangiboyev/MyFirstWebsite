@@ -8,5 +8,6 @@ import java.util.Optional;
 
 @RestController
 public interface UserRepository extends CrudRepository<Users, Long> {
+
     Optional<Users> findByName(String username);
 }
