@@ -1,6 +1,8 @@
 package com.example.myfirstwebsite.service;
 
 
+import com.example.myfirstwebsite.Exception.UserNotFoundException;
+import com.example.myfirstwebsite.model.Car;
 import com.example.myfirstwebsite.model.Users;
 import com.example.myfirstwebsite.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +26,15 @@ public class UserService {
         if (userRepository.findByName(users.getName()).isPresent()) {
             return false;
         }
+        if (users.getCars() != null){
+            for (Car car : users.getCars()) {
+                car.setUser(users);
+            }
+        }
         userRepository.save(users);
         return true;
+    }
+    public Users getUser(Long id){
+        return userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User not found"));
     }
 }
