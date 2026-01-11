@@ -21,5 +21,5 @@ public class GlobalExceptionHandler {
         );
         return new ResponseEntity<>(errorDetails,  HttpStatus.NOT_FOUND);
     }
-    record ErrorDetails(LocalDateTime timestamp, String message, String details) {}
+ //   record ErrorDetails(LocalDateTime timestamp, String message, String details) {}
 }
